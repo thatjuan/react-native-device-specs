@@ -1,0 +1,22 @@
+{
+  "name": "react-native-detect-device",
+  "version": "1.0.0",
+  "description": "Detect a device on iOS or android in react-native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peachmeco/react-native-detect-device.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Isaac Madwed <i.madwed@gmail.com> (https://github.com/madwed)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peachmeco/react-native-detect-device/issues"
+  },
+  "homepage": "https://github.com/peachmeco/react-native-detect-device#readme"
+}
