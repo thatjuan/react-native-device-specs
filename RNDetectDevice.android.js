@@ -1,17 +1,17 @@
 /**
- * Stub of test for Android.
+ * Stub of RNDetectDevice for Android.
  *
- * @providesModule test
+ * @providesModule RNDetectDevice
  * @flow
  */
 'use strict';
 
 var warning = require('warning');
 
-var test = {
+var RNDetectDevice = {
   test: function() {
     warning("Not yet implemented for Android.");
   }
 };
 
-module.exports = test;
+module.exports = RNDetectDevice;

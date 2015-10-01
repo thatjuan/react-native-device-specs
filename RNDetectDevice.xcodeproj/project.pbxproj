@@ -7,31 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1CBF2A01BBD7BE900F179C2 /* RNDetectDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */; };
-		A1CBF2A21BBD7BE900F179C2 /* RNDetectDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */; };
+		13BE3DEE1AC21097009241FE /* RNDetectDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* RNDetectDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A1CBF29A1BBD7BE900F179C2 /* CopyFiles */ = {
+		58B511D91A9E6C8500147676 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A1CBF2A01BBD7BE900F179C2 /* RNDetectDevice.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDetectDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDetectDevice.h; sourceTree = "<group>"; };
-		A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDetectDevice.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libRNDetectDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDetectDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BE3DEC1AC21097009241FE /* RNDetectDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDetectDevice.h; sourceTree = "<group>"; };
+		13BE3DED1AC21097009241FE /* RNDetectDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDetectDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A1CBF2991BBD7BE900F179C2 /* Frameworks */ = {
+		58B511D81A9E6C8500147676 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,96 +39,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A1CBF2931BBD7BE900F179C2 = {
+		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1CBF29E1BBD7BE900F179C2 /* RNDetectDevice */,
-				A1CBF29D1BBD7BE900F179C2 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		A1CBF29D1BBD7BE900F179C2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */,
+				134814201AA4EA6300B7C361 /* libRNDetectDevice.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1CBF29E1BBD7BE900F179C2 /* RNDetectDevice */ = {
+		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */,
-				A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */,
+				13BE3DEC1AC21097009241FE /* RNDetectDevice.h */,
+				13BE3DED1AC21097009241FE /* RNDetectDevice.m */,
+				134814211AA4EA7D00B7C361 /* Products */,
 			);
-			name = RNDetectDevice;
-			path = RCTDetectDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1CBF29B1BBD7BE900F179C2 /* RNDetectDevice */ = {
+		58B511DA1A9E6C8500147676 /* RNDetectDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */;
 			buildPhases = (
-				A1CBF2981BBD7BE900F179C2 /* Sources */,
-				A1CBF2991BBD7BE900F179C2 /* Frameworks */,
-				A1CBF29A1BBD7BE900F179C2 /* CopyFiles */,
+				58B511D71A9E6C8500147676 /* Sources */,
+				58B511D81A9E6C8500147676 /* Frameworks */,
+				58B511D91A9E6C8500147676 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RNDetectDevice;
-			productName = RCTDetectDevice;
-			productReference = A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */;
+			productName = RCTDataManager;
+			productReference = 134814201AA4EA6300B7C361 /* libRNDetectDevice.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A1CBF2941BBD7BE900F179C2 /* Project object */ = {
+		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = Peach;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					A1CBF29B1BBD7BE900F179C2 = {
-						CreatedOnToolsVersion = 7.0.1;
+					58B511DA1A9E6C8500147676 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RNDetectDevice" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDetectDevice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A1CBF2931BBD7BE900F179C2;
-			productRefGroup = A1CBF29D1BBD7BE900F179C2 /* Products */;
+			mainGroup = 58B511D21A9E6C8500147676;
+			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1CBF29B1BBD7BE900F179C2 /* RNDetectDevice */,
+				58B511DA1A9E6C8500147676 /* RNDetectDevice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A1CBF2981BBD7BE900F179C2 /* Sources */ = {
+		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CBF2A21BBD7BE900F179C2 /* RNDetectDevice.m in Sources */,
+				13BE3DEE1AC21097009241FE /* RNDetectDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A1CBF2A31BBD7BE900F179C2 /* Debug */ = {
+		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -148,31 +137,29 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		A1CBF2A41BBD7BE900F179C2 /* Release */ = {
+		58B511EE1A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,37 +176,48 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A1CBF2A61BBD7BE900F179C2 /* Debug */ = {
+		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/../../node_modules/react-native/React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNDetectDevice;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A1CBF2A71BBD7BE900F179C2 /* Release */ = {
+		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../React/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNDetectDevice;
 				SKIP_INSTALL = YES;
@@ -229,25 +227,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RNDetectDevice" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1CBF2A31BBD7BE900F179C2 /* Debug */,
-				A1CBF2A41BBD7BE900F179C2 /* Release */,
+				58B511ED1A9E6C8500147676 /* Debug */,
+				58B511EE1A9E6C8500147676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1CBF2A61BBD7BE900F179C2 /* Debug */,
-				A1CBF2A71BBD7BE900F179C2 /* Release */,
+				58B511F01A9E6C8500147676 /* Debug */,
+				58B511F11A9E6C8500147676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A1CBF2941BBD7BE900F179C2 /* Project object */;
+	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
 }

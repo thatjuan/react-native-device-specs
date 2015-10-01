@@ -5,9 +5,8 @@
 //  Created by Eric Sauter on 5/6/15.
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
+#import "RCTBridgeModule.h"
 
-#import <RNBridge.h>
-
-@interface RNDetectDevice : NSObject <RNBridgeModule>
+@interface RNDetectDevice : NSObject <RCTBridgeModule>
 
 @end
