@@ -8,6 +8,6 @@
 
 #import <RCTBridge.h>
 
-@interface UIDeviceHardware : NSObject <RCTBridgeModule>
+@interface RCTDetectDevice : NSObject <RCTBridgeModule>
 
 @end

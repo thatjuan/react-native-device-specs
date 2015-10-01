@@ -1,3 +1,3 @@
-import { UIDeviceHardware } from 'NativeModules';
+import { RCTDeviceHardware } from 'NativeModules';
 
-export default UIDeviceHardware.deviceInfo;
+export default RCTDeviceHardware.deviceInfo;

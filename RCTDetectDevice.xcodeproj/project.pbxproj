@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A13807911BBC894700BFED43 /* UIDeviceHardware.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A13807901BBC894700BFED43 /* UIDeviceHardware.h */; };
-		A13807931BBC894700BFED43 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A13807921BBC894700BFED43 /* UIDeviceHardware.m */; };
+		A1CBF2A01BBD7BE900F179C2 /* RCTDetectDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */; };
+		A1CBF2A21BBD7BE900F179C2 /* RCTDetectDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A138078B1BBC894600BFED43 /* CopyFiles */ = {
+		A1CBF29A1BBD7BE900F179C2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A13807911BBC894700BFED43 /* UIDeviceHardware.h in CopyFiles */,
+				A1CBF2A01BBD7BE900F179C2 /* RCTDetectDevice.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A138078D1BBC894700BFED43 /* libUIDeviceHardware.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUIDeviceHardware.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A13807901BBC894700BFED43 /* UIDeviceHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
-		A13807921BBC894700BFED43 /* UIDeviceHardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
+		A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDetectDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDetectDevice.h; sourceTree = "<group>"; };
+		A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDetectDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A138078A1BBC894600BFED43 /* Frameworks */ = {
+		A1CBF2991BBD7BE900F179C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,96 +41,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A13807841BBC894600BFED43 = {
+		A1CBF2931BBD7BE900F179C2 = {
 			isa = PBXGroup;
 			children = (
-				A138078F1BBC894700BFED43 /* UIDeviceHardware */,
-				A138078E1BBC894700BFED43 /* Products */,
+				A1CBF29E1BBD7BE900F179C2 /* RCTDetectDevice */,
+				A1CBF29D1BBD7BE900F179C2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A138078E1BBC894700BFED43 /* Products */ = {
+		A1CBF29D1BBD7BE900F179C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A138078D1BBC894700BFED43 /* libUIDeviceHardware.a */,
+				A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A138078F1BBC894700BFED43 /* UIDeviceHardware */ = {
+		A1CBF29E1BBD7BE900F179C2 /* RCTDetectDevice */ = {
 			isa = PBXGroup;
 			children = (
-				A13807901BBC894700BFED43 /* UIDeviceHardware.h */,
-				A13807921BBC894700BFED43 /* UIDeviceHardware.m */,
+				A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */,
+				A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */,
 			);
-			name = UIDeviceHardware;
-			path = "Detect Device";
+			path = RCTDetectDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A138078C1BBC894600BFED43 /* UIDeviceHardware */ = {
+		A1CBF29B1BBD7BE900F179C2 /* RCTDetectDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A13807961BBC894700BFED43 /* Build configuration list for PBXNativeTarget "UIDeviceHardware" */;
+			buildConfigurationList = A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RCTDetectDevice" */;
 			buildPhases = (
-				A13807891BBC894600BFED43 /* Sources */,
-				A138078A1BBC894600BFED43 /* Frameworks */,
-				A138078B1BBC894600BFED43 /* CopyFiles */,
+				A1CBF2981BBD7BE900F179C2 /* Sources */,
+				A1CBF2991BBD7BE900F179C2 /* Frameworks */,
+				A1CBF29A1BBD7BE900F179C2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UIDeviceHardware;
-			productName = "Detect Device";
-			productReference = A138078D1BBC894700BFED43 /* libUIDeviceHardware.a */;
+			name = RCTDetectDevice;
+			productName = RCTDetectDevice;
+			productReference = A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A13807851BBC894600BFED43 /* Project object */ = {
+		A1CBF2941BBD7BE900F179C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Peach;
 				TargetAttributes = {
-					A138078C1BBC894600BFED43 = {
+					A1CBF29B1BBD7BE900F179C2 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
-			buildConfigurationList = A13807881BBC894600BFED43 /* Build configuration list for PBXProject "UIDeviceHardware" */;
+			buildConfigurationList = A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RCTDetectDevice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A13807841BBC894600BFED43;
-			productRefGroup = A138078E1BBC894700BFED43 /* Products */;
+			mainGroup = A1CBF2931BBD7BE900F179C2;
+			productRefGroup = A1CBF29D1BBD7BE900F179C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A138078C1BBC894600BFED43 /* UIDeviceHardware */,
+				A1CBF29B1BBD7BE900F179C2 /* RCTDetectDevice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A13807891BBC894600BFED43 /* Sources */ = {
+		A1CBF2981BBD7BE900F179C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13807931BBC894700BFED43 /* UIDeviceHardware.m in Sources */,
+				A1CBF2A21BBD7BE900F179C2 /* RCTDetectDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A13807941BBC894700BFED43 /* Debug */ = {
+		A1CBF2A31BBD7BE900F179C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -172,7 +171,7 @@
 			};
 			name = Debug;
 		};
-		A13807951BBC894700BFED43 /* Release */ = {
+		A1CBF2A41BBD7BE900F179C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,20 +207,20 @@
 			};
 			name = Release;
 		};
-		A13807971BBC894700BFED43 /* Debug */ = {
+		A1CBF2A61BBD7BE900F179C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = UIDeviceHardware;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		A13807981BBC894700BFED43 /* Release */ = {
+		A1CBF2A71BBD7BE900F179C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = UIDeviceHardware;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -229,25 +228,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A13807881BBC894600BFED43 /* Build configuration list for PBXProject "UIDeviceHardware" */ = {
+		A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RCTDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A13807941BBC894700BFED43 /* Debug */,
-				A13807951BBC894700BFED43 /* Release */,
+				A1CBF2A31BBD7BE900F179C2 /* Debug */,
+				A1CBF2A41BBD7BE900F179C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A13807961BBC894700BFED43 /* Build configuration list for PBXNativeTarget "UIDeviceHardware" */ = {
+		A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RCTDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A13807971BBC894700BFED43 /* Debug */,
-				A13807981BBC894700BFED43 /* Release */,
+				A1CBF2A61BBD7BE900F179C2 /* Debug */,
+				A1CBF2A71BBD7BE900F179C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A13807851BBC894600BFED43 /* Project object */;
+	rootObject = A1CBF2941BBD7BE900F179C2 /* Project object */;
 }
