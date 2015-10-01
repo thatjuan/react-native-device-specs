@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/peachmeco/react-native-detect-device/issues"
   },
-  "homepage": "https://github.com/peachmeco/react-native-detect-device#readme"
+  "homepage": "https://github.com/peachmeco/react-native-detect-device#readme",
+  "dependencies": {
+    "react-native": "^0.11.4"
+  }
 }
