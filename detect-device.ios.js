@@ -1,3 +1,3 @@
-import { RCTDeviceHardware } from 'NativeModules';
+import { RCTDetectDevice } from 'NativeModules';
 
-export default RCTDeviceHardware.deviceInfo;
+export default RCTDetectDevice.deviceInfo;
