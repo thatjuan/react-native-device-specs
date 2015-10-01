@@ -12,8 +12,8 @@ var invariant = require('invariant');
  */
 
 var RNDetectDevice = {
-  deviceInfo: function() {
-    NativeRNDetectDevice.deviceInfo();
+  deviceInfo: function(cb) {
+    NativeRNDetectDevice.deviceInfo(cb);
   }
 };
 
