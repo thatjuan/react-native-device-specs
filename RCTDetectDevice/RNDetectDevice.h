@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import <RCTBridge.h>
+#import <RNBridge.h>
 
-@interface RCTDetectDevice : NSObject <RCTBridgeModule>
+@interface RNDetectDevice : NSObject <RNBridgeModule>
 
 @end

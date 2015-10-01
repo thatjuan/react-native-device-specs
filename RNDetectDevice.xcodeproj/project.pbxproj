@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1CBF2A01BBD7BE900F179C2 /* RCTDetectDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */; };
-		A1CBF2A21BBD7BE900F179C2 /* RCTDetectDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */; };
+		A1CBF2A01BBD7BE900F179C2 /* RNDetectDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */; };
+		A1CBF2A21BBD7BE900F179C2 /* RNDetectDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +18,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A1CBF2A01BBD7BE900F179C2 /* RCTDetectDevice.h in CopyFiles */,
+				A1CBF2A01BBD7BE900F179C2 /* RNDetectDevice.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTDetectDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTDetectDevice.h; sourceTree = "<group>"; };
-		A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTDetectDevice.m; sourceTree = "<group>"; };
+		A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNDetectDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDetectDevice.h; sourceTree = "<group>"; };
+		A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDetectDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		A1CBF2931BBD7BE900F179C2 = {
 			isa = PBXGroup;
 			children = (
-				A1CBF29E1BBD7BE900F179C2 /* RCTDetectDevice */,
+				A1CBF29E1BBD7BE900F179C2 /* RNDetectDevice */,
 				A1CBF29D1BBD7BE900F179C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +52,27 @@
 		A1CBF29D1BBD7BE900F179C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */,
+				A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1CBF29E1BBD7BE900F179C2 /* RCTDetectDevice */ = {
+		A1CBF29E1BBD7BE900F179C2 /* RNDetectDevice */ = {
 			isa = PBXGroup;
 			children = (
-				A1CBF29F1BBD7BE900F179C2 /* RCTDetectDevice.h */,
-				A1CBF2A11BBD7BE900F179C2 /* RCTDetectDevice.m */,
+				A1CBF29F1BBD7BE900F179C2 /* RNDetectDevice.h */,
+				A1CBF2A11BBD7BE900F179C2 /* RNDetectDevice.m */,
 			);
+			name = RNDetectDevice;
 			path = RCTDetectDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A1CBF29B1BBD7BE900F179C2 /* RCTDetectDevice */ = {
+		A1CBF29B1BBD7BE900F179C2 /* RNDetectDevice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RCTDetectDevice" */;
+			buildConfigurationList = A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */;
 			buildPhases = (
 				A1CBF2981BBD7BE900F179C2 /* Sources */,
 				A1CBF2991BBD7BE900F179C2 /* Frameworks */,
@@ -81,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = RCTDetectDevice;
+			name = RNDetectDevice;
 			productName = RCTDetectDevice;
-			productReference = A1CBF29C1BBD7BE900F179C2 /* libRCTDetectDevice.a */;
+			productReference = A1CBF29C1BBD7BE900F179C2 /* libRNDetectDevice.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RCTDetectDevice" */;
+			buildConfigurationList = A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RNDetectDevice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A1CBF29B1BBD7BE900F179C2 /* RCTDetectDevice */,
+				A1CBF29B1BBD7BE900F179C2 /* RNDetectDevice */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CBF2A21BBD7BE900F179C2 /* RCTDetectDevice.m in Sources */,
+				A1CBF2A21BBD7BE900F179C2 /* RNDetectDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +212,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RNDetectDevice;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -220,7 +221,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RNDetectDevice;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -228,7 +229,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RCTDetectDevice" */ = {
+		A1CBF2971BBD7BE900F179C2 /* Build configuration list for PBXProject "RNDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1CBF2A31BBD7BE900F179C2 /* Debug */,
@@ -237,13 +238,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RCTDetectDevice" */ = {
+		A1CBF2A51BBD7BE900F179C2 /* Build configuration list for PBXNativeTarget "RNDetectDevice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A1CBF2A61BBD7BE900F179C2 /* Debug */,
 				A1CBF2A71BBD7BE900F179C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

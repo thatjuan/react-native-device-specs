@@ -1,3 +1,19 @@
-import { RCTDetectDevice } from 'NativeModules';
+/**
+ * @providesModule RNDetectDevice
+ * @flow
+ */
+'use strict';
 
-export default RCTDetectDevice.deviceInfo;
+var RNDetectDevice = require('NativeModules').RNDetectDevice;
+var invariant = require('invariant');
+
+
+
+var deviceInfo = {
+  deviceInfo: function() {
+    RNDetectDevice.deviceInfo();
+  }
+};
+
+module.exports = deviceInfo;
+
