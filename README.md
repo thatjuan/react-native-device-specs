@@ -1,6 +1,6 @@
 # RNDeviceSpecs
 
-RNDeviceSpecs detects the specifications of the device it is running on.
+RNDeviceSpecs detects the specifications of the device it is running on.  Requiring or importing the module will give you an object with properties that describe the user's device.
 
 ### Add it to your project
 1. `npm install react-native-device-specs --save`
