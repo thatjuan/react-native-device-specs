@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
 
-#import "RNDetectDevice.h"
+#import "RNDeviceSpecs.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
 @import CoreTelephony;
 
-@implementation RNDetectDevice
+@implementation RNDeviceSpecs
 
 RCT_EXPORT_MODULE()
 

@@ -7,6 +7,6 @@
 //
 #import "RCTBridgeModule.h"
 
-@interface RNDetectDevice : NSObject <RCTBridgeModule>
+@interface RNDeviceSpecs : NSObject <RCTBridgeModule>
 
 @end

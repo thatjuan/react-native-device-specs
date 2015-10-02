@@ -1,3 +1,3 @@
-import detectDevice from "./RNDetectDevice";
+import deviceSpecs from "./RNDeviceSpecs";
 
-export default detectDevice;
+export default deviceSpecs;
