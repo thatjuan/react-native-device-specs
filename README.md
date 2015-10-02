@@ -1,4 +1,4 @@
-# RNDeviceSpecs
+# React Native Device Specs
 
 RNDeviceSpecs detects the specifications of the device it is running on.  Requiring or importing the module will give you an object with properties that describe the user's device.
 
