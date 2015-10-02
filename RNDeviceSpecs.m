@@ -31,7 +31,7 @@ RCT_EXPORT_MODULE()
     CTCarrier *carrier = [netinfo subscriberCellularProvider];
     NSString *carrierName = carrier.carrierName;
     if (carrierName == nil) {
-        carrierName = @"Simulator Carrier";
+        carrierName = @"No Carrier";
     }
     
     return carrierName;
@@ -47,10 +47,8 @@ RCT_EXPORT_MODULE()
     if (dictionary) {
         fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
         fileSystemSizeInGBytes = [@([fileSystemSizeInBytes floatValue] / 1E+9) integerValue];
-        //totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
-        //NSLog(@"Memory Capacity of %llu MiB with %llu MiB Free memory available.", ((totalSpace/1024ll)/1024ll), ((totalFreeSpace/1024ll)/1024ll));
     } else {
-        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %@", [error domain], [error code]);
+        NSLog(@"Error Obtaining Disk Memory: Domain = %@, Code = %@", [error domain], [error code]);
     }
     
     return fileSystemSizeInGBytes;
@@ -60,12 +58,6 @@ RCT_EXPORT_MODULE()
 {
     return @{@"platform": [self platform], @"carrier": [self carrier], @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]]};
 }
-
-//RCT_EXPORT_METHOD(deviceInfo:(RCTResponseSenderBlock)successCallback) {
-//    NSDictionary *deviceInfo = @{@"platform": [self platform], @"carrier": [self carrier], @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]]};
-//    
-//    successCallback(@[deviceInfo]);
-//}
 
 
 
