@@ -56,11 +56,16 @@ RCT_EXPORT_MODULE()
     return fileSystemSizeInGBytes;
 }
 
-RCT_EXPORT_METHOD(deviceInfo:(RCTResponseSenderBlock)successCallback) {
-    NSDictionary *deviceInfo = @{@"platform": [self platform], @"carrier": [self carrier], @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]]};
-    
-    successCallback(@[deviceInfo]);
+- (NSDictionary *)constantsToExport
+{
+    return @{@"platform": [self platform], @"carrier": [self carrier], @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]]};
 }
+
+//RCT_EXPORT_METHOD(deviceInfo:(RCTResponseSenderBlock)successCallback) {
+//    NSDictionary *deviceInfo = @{@"platform": [self platform], @"carrier": [self carrier], @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]]};
+//    
+//    successCallback(@[deviceInfo]);
+//}
 
 
 

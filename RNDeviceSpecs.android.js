@@ -1,17 +1,17 @@
 /**
- * Stub of RNDetectDevice for Android.
+ * Stub of RNDeviceSpecs for Android.
  *
- * @providesModule RNDetectDevice
+ * @providesModule RNDeviceSpecs
  * @flow
  */
 'use strict';
 
 var warning = require('warning');
 
-var RNDetectDevice = {
-  test: function() {
+var RNDeviceSpecs = {
+  deviceInfo: function(cb) {
     warning("Not yet implemented for Android.");
   }
 };
 
-module.exports = RNDetectDevice;
+module.exports = RNDeviceSpecs.deviceInfo;

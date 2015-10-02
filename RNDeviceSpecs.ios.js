@@ -1,20 +1,20 @@
 /**
- * @providesModule RNDetectDevice
+ * @providesModule RNDeviceSpecs
  * @flow
  */
 'use strict';
 
-var NativeRNDetectDevice = require('NativeModules').RNDetectDevice;
+var NativeRNDeviceSpecs = require('NativeModules').RNDeviceSpecs;
 var invariant = require('invariant');
 
 /**
- * High-level docs for the RNDetectDevice iOS API can be written here.
+ * High-level docs for the RNDeviceSpecs iOS API can be written here.
  */
 
-var RNDetectDevice = {
-  deviceInfo: function(cb) {
-    NativeRNDetectDevice.deviceInfo(cb);
-  }
+var RNDeviceSpecs = {
+  platform: NativeRNDeviceSpecs.platform,
+  diskSpace: NativeRNDeviceSpecs.diskSpace,
+  carrier: NativeRNDeviceSpecs.carrier
 };
 
-module.exports = RNDetectDevice.deviceInfo;
+module.exports = RNDeviceSpecs;
