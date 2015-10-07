@@ -6,12 +6,20 @@
  */
 'use strict';
 
-var warning = require('warning');
+var NativeModules = require("NativeModules");
+
+var NativeRNDeviceSpecs = NativeModules.RNDeviceSpecs;
+var invariant = require("invariant");
+
+
+NativeRNDeviceSpecs.getModel(function (err, data) {
+  console.log(err, data, "data");
+});
 
 var RNDeviceSpecs = {
-  deviceInfo: function(cb) {
-    warning("Not yet implemented for Android.");
-  }
+  actualDiskSpace: NativeRNDeviceSpecs.DISK_SPACE,
+  carrier: NativeRNDeviceSpecs.CARRIER,
+  name: NativeRNDeviceSpecs.NAME
 };
 
 module.exports = RNDeviceSpecs.deviceInfo;
