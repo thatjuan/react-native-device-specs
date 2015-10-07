@@ -7,7 +7,7 @@ RNDeviceSpecs detects the specifications of the device it is running on.  Requir
 `npm install react-native-device-specs --save`
 ### iOS
 Open your project in XCode, right click on `Libraries`, click `Add files to (Your Project Name)`, and select `RNDeviceSpecs.xcodeproj`
-***
+
 Add `libRNDeviceSpecs.a` to `Build Phases` --> `Link Binary With Libraries`
 ### Android
 In `android/settings.gradle`
@@ -18,7 +18,7 @@ add:
 include ':react-native-device-specs'
 project(':react-native-device-specs').projectDir = new File(settingsDir, '../node_modules/react-native-device-specs')
 ```
-***
+
 In `android/app/build.gradle`
 ```
 dependencies {
@@ -26,7 +26,7 @@ dependencies {
     compile project(':react-native-device-specs')
 }
 ```
-***
+
 In `android/app/src/main/java/com/YourProject/MainActivity.java`
 add:
 ```
