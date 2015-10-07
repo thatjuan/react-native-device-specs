@@ -2,14 +2,14 @@
 
 RNDeviceSpecs detects the specifications of the device it is running on.  Requiring or importing the module will give you an object with properties that describe the user's device.
 
-### Add it to your project
-#### Install
+## Add it to your project
+### Install
 `npm install react-native-device-specs --save`
-#### iOS
+### iOS
 Open your project in XCode, right click on `Libraries`, click `Add files to (Your Project Name)`, and select `RNDeviceSpecs.xcodeproj`
 ***
 Add `libRNDeviceSpecs.a` to `Build Phases` --> `Link Binary With Libraries`
-#### Android
+### Android
 In `android/settings.gradle`
 below `include ':app'`
 add:
@@ -56,10 +56,10 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
     }   
 }
 ```
-#### Use it!
+### Use it!
 Use `import specs from 'react-native-device-specs'` or `var specs = require('react-native-device-specs')` in your project!
 
-### Properties
+## Properties
 - `platform:` The platform code.
 - `actualDiskSpace:` The actual size of the disk.
 - `storage:` The best guess for the advertised size of the disk.
@@ -68,5 +68,5 @@ Use `import specs from 'react-native-device-specs'` or `var specs = require('rea
 - `name:` The standard name for the device. e.g. 'iPhone 5s'.
 - `possibleColors:` The colors that this device comes in.
 
-### Contributing
+## Contributing
 Feel free to submit a pull request with feature suggestions or device updates.  Please maintain a consistent syntax for new devices (See lib/iosModels.js for examples)
