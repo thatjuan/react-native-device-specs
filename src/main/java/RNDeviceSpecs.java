@@ -26,8 +26,8 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
   }
 
   @Override
-  public Map<String, String> getConstants() {
-    final Map<String, String> constants = new HashMap<>();
+  public Map<String, Object> getConstants() {
+    final Map<String, Object> constants = new HashMap<>();
     String model = Build.MODEL;
     constants.put("model", model);
 
