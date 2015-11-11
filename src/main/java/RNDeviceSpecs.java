@@ -1,13 +1,8 @@
 package com.joinpeach.react.device.specs;
 
-import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
-import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
-import com.facebook.react.bridge.WritableMap;
-import com.facebook.react.bridge.Arguments;
 
 import android.telephony.TelephonyManager;
 import android.os.Build;
@@ -16,6 +11,8 @@ import android.os.Environment;
 import android.content.Context;
 
 import java.text.DecimalFormat;
+import java.util.Map;
+import java.util.HashMap;
 
 public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
 
@@ -77,16 +74,8 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
     if (size < Eb)  return floatForm((double)size / Pb) + " Pb";
     if (size >= Eb) return floatForm((double)size / Eb) + " Eb";
 
-    return "???";
+    return "Unknown device size";
   }
 
 }
 
-//x platform: platform,
-//x actualDiskSpace: NativeRNDeviceSpecs.diskSpace,
-//x carrier: NativeRNDeviceSpecs.carrier,
-
-// storage: storage,
-// formalName: model.formalName,
-// name: model.name,
-// possibleColors: model.colors
