@@ -6,9 +6,7 @@
  */
 'use strict';
 
-var NativeModules = require("NativeModules");
-
-var NativeSpecs = NativeModules.RNDeviceSpecs;
+var NativeSpecs = require("NativeModules").RNDeviceSpecs;
 
 var RNDeviceSpecs = {
   diskSpace: NativeSpecs.diskSpace,
