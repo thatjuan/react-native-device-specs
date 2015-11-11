@@ -6,7 +6,9 @@
  */
 'use strict';
 
-var NativeSpecs = require("NativeModules").RNDeviceSpecs;
+var NativeModules = require("NativeModules");
+
+var NativeSpecs = NativeModules.RNDeviceSpecs;
 
 var RNDeviceSpecs = {
   diskSpace: NativeSpecs.diskSpace,
@@ -15,4 +17,3 @@ var RNDeviceSpecs = {
 };
 
 module.exports = RNDeviceSpecs.deviceInfo;
-

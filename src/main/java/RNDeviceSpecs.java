@@ -28,22 +28,17 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
   @Override
   public Map<String, Object> getConstants() {
     final Map<String, Object> constants = new HashMap<>();
-    String model = Build.MODEL;
-    constants.put("model", model);
 
-    String brand = Build.BRAND;
-    constants.put("brand", brand);
-
-    String product = Build.PRODUCT;
-    constants.put("product", product);
+    String platform = Build.BRAND;
+    constants.put("platform", platform);
 
     ReactContext reactContext = (ReactContext)getReactApplicationContext();
     TelephonyManager manager = (TelephonyManager)reactContext.getSystemService(Context.TELEPHONY_SERVICE);
     String carrier = manager.getNetworkOperatorName();
     constants.put("carrier", carrier);
 
-    String disk_space = bytesToHuman(totalMemory());
-    constants.put("disk_space", disk_space);
+    String diskSpace = bytesToHuman(totalMemory());
+    constants.put("diskSpace", diskSpace);
     return constants;
   }
 
