@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/peachmeco/react-native-device-specs#readme",
   "dependencies": {
-    "react-native": "^0.11.4"
   }
 }
