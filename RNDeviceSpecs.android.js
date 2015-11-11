@@ -12,7 +12,7 @@ var NativeRNDeviceSpecs = NativeModules.RNDeviceSpecs;
 var invariant = require("invariant");
 
 
-NativeRNDeviceSpecs.getModel(function (err, data) {
+NativeRNDeviceSpecs.getDeviceSpecs(function (err, data) {
   console.log(err, data, "data");
 });
 
