@@ -16,4 +16,4 @@ var RNDeviceSpecs = {
   platform: NativeSpecs.platform
 };
 
-module.exports = RNDeviceSpecs.deviceInfo;
+module.exports = RNDeviceSpecs;
