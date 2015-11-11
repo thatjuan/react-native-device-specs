@@ -28,34 +28,27 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
     return "RNDeviceSpecs";
   }
 
-  @ReactMethod
-  public void getDeviceSpecs(Callback cb) {
-    try{
-      WritableMap specs = Arguments.createMap();
+  @Override
+  public Map<String, String> getConstants() {
+    final Map<String, String> constants = new HashMap<>();
+    String model = Build.MODEL;
+    constants.put("model", model);
 
-      String model = Build.MODEL;
-      specs.putString("model", model);
+    String brand = Build.BRAND;
+    constants.put("brand", brand);
 
-      String brand = Build.BRAND;
-      specs.putString("brand", brand);
+    String product = Build.PRODUCT;
+    constants.put("product", product);
 
-      String product = Build.PRODUCT;
-      specs.putString("product", product);
+    ReactContext reactContext = (ReactContext)getReactApplicationContext();
+    TelephonyManager manager = (TelephonyManager)reactContext.getSystemService(Context.TELEPHONY_SERVICE);
+    String carrier = manager.getNetworkOperatorName();
+    constants.put("carrier", carrier);
 
-      ReactContext reactContext = (ReactContext)getReactApplicationContext();
-      TelephonyManager manager = (TelephonyManager)reactContext.getSystemService(Context.TELEPHONY_SERVICE);
-      String carrier = manager.getNetworkOperatorName();
-      specs.putString("carrier", carrier);
-
-      String disk_space = bytesToHuman(totalMemory());
-      specs.putString("disk_space", disk_space);
-
-      cb.invoke(null, specs);
-    }catch (Exception e){
-      cb.invoke(e.getMessage());
-    }
+    String disk_space = bytesToHuman(totalMemory());
+    constants.put("disk_space", disk_space);
+    return constants;
   }
-
 
   private long totalMemory(){
     StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());   
@@ -89,11 +82,11 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
 
 }
 
-  //x platform: platform,
-  //x actualDiskSpace: NativeRNDeviceSpecs.diskSpace,
-  //x carrier: NativeRNDeviceSpecs.carrier,
-  
-  // storage: storage,
-  // formalName: model.formalName,
-  // name: model.name,
-  // possibleColors: model.colors
+//x platform: platform,
+//x actualDiskSpace: NativeRNDeviceSpecs.diskSpace,
+//x carrier: NativeRNDeviceSpecs.carrier,
+
+// storage: storage,
+// formalName: model.formalName,
+// name: model.name,
+// possibleColors: model.colors
