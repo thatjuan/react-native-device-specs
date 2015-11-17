@@ -5,8 +5,8 @@
  * @flow
  */
 'use strict';
-
-var NativeSpecs = require("NativeModules").RNDeviceSpecs;
+import { NativeModules } from 'react-native';
+var NativeSpecs = NativeModules.RNDeviceSpecs;
 
 var RNDeviceSpecs = {
   diskSpace: NativeSpecs.diskSpace,
