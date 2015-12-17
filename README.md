@@ -61,12 +61,9 @@ Use `import specs from 'react-native-device-specs'` or `var specs = require('rea
 
 ## Properties
 - `platform:` The platform code.
-- `actualDiskSpace:` The actual size of the disk.
-- `storage:` The best guess for the advertised size of the disk.
+- `diskSpace:` The actual size of the disk.
 - `carrier:` The carrier of device or `'No Carrier'` for Simulators or Devices without a carrier.
-- `formalName:` The formal name of the device. e.g. 'iPhone 5S (GSM)', 'iPhone 5S (GSM+CDMA)'.
-- `name:` The standard name for the device. e.g. 'iPhone 5s'.
-- `possibleColors:` The colors that this device comes in.
+
 
 ## Contributing
 Feel free to submit a pull request with feature suggestions or device updates.  Please maintain a consistent syntax for new devices (See lib/iosModels.js for examples)
