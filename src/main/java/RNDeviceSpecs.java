@@ -29,7 +29,7 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
   public Map<String, Object> getConstants() {
     final Map<String, Object> constants = new HashMap<>();
 
-    String platform = Build.BRAND;
+    String platform = Build.MODEL;
     constants.put("platform", platform);
 
     ReactContext reactContext = (ReactContext)getReactApplicationContext();
