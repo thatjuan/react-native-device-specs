@@ -43,7 +43,7 @@ public final class RNDeviceSpecs extends ReactContextBaseJavaModule {
   }
 
   private long totalMemory(){
-    StatFs statFs = new StatFs(Environment.getRootDirectory().getAbsolutePath());   
+    StatFs statFs = new StatFs(Environment.getExternalStorageDirectory().getPath());   
     long   total  = (statFs.getBlockCountLong() * statFs.getBlockSizeLong());
     return total;
   }
