@@ -9,7 +9,7 @@ import { NativeModules } from 'react-native';
 var NativeSpecs = NativeModules.RNDeviceSpecs;
 
 var RNDeviceSpecs = {
-  diskSpace: NativeSpecs.diskSpace,
+  diskSpace: parseFloat(NativeSpecs.diskSpace),
   carrier: NativeSpecs.carrier,
   platform: NativeSpecs.platform
 };
