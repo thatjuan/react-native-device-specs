@@ -1,6 +1,6 @@
 {
   "name": "react-native-device-specs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Detect the specifications of a device on iOS or android in react-native.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
