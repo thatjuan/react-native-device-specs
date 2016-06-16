@@ -1,13 +1,11 @@
 import { NativeModules } from 'react-native';
-import closest from './closest';
+import closestSize from './closest-size';
 
 const NativeSpecs = NativeModules.RNDeviceSpecs;
-
-export const storageOptions = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1028];
-export const diskSpace = parseFloat(NativeSpecs.diskSpace);
+const diskSpace = parseFloat(NativeSpecs.diskSpace);
 
 export const RNDeviceSpecs = {
-  storageSize: closest(storageOptions, diskSpace),
+  storageSize: closestSize(diskSpace),
   diskSpace,
   carrier: NativeSpecs.carrier,
   platform: NativeSpecs.platform
