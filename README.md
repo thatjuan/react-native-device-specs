@@ -53,7 +53,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
         mReactRootView.startReactApplication(mReactInstanceManager, "YourProject", null);
 
         setContentView(mReactRootView);
-    }   
+    }
 }
 ```
 ### Use it!
@@ -61,6 +61,7 @@ Use `import specs from 'react-native-device-specs'` or `var specs = require('rea
 
 ## Properties
 - `platform:` The platform code.
+- `storageSize:` The quoted storage size (GB) given by Apple (Ex: 32, 64, 128)
 - `diskSpace:` The actual size of the disk.
 - `carrier:` The carrier of device or `'No Carrier'` for Simulators or Devices without a carrier.
 
