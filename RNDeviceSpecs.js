@@ -1,15 +1,12 @@
-/**
- * Stub of RNDeviceSpecs for Android.
- *
- * @providesModule RNDeviceSpecs
- * @flow
- */
-'use strict';
 import { NativeModules } from 'react-native';
-var NativeSpecs = NativeModules.RNDeviceSpecs;
+import closestSize from './closest-size';
 
-var RNDeviceSpecs = {
-  diskSpace: parseFloat(NativeSpecs.diskSpace),
+const NativeSpecs = NativeModules.RNDeviceSpecs;
+const diskSpace = parseFloat(NativeSpecs.diskSpace);
+
+export const RNDeviceSpecs = {
+  storageSize: closestSize(diskSpace),
+  diskSpace,
   carrier: NativeSpecs.carrier,
   platform: NativeSpecs.platform
 };
