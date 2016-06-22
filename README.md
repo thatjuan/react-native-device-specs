@@ -60,10 +60,10 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 Use `import specs from 'react-native-device-specs'` or `var specs = require('react-native-device-specs')` in your project!
 
 ## Properties
-- `platform:` The platform code.
-- `storageSize:` The quoted storage size (GB) given by Apple (Ex: 32, 64, 128)
-- `diskSpace:` The actual size of the disk.
-- `carrier:` The carrier of device or `'No Carrier'` for Simulators or Devices without a carrier.
+- `platform`: The platform code.
+- `storageSize`: The quoted storage size (GB) given by Apple (Ex: 32, 64, 128)
+- `diskSpace`: The actual size of the disk.
+- `carrier`: The carrier of device or `'No Carrier'` for Simulators or Devices without a carrier.
 
 
 ## Contributing
