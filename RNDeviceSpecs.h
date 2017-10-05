@@ -5,7 +5,7 @@
 //  Created by Eric Sauter on 5/6/15.
 //  Copyright (c) 2015 Facebook. All rights reserved.
 //
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 
 @interface RNDeviceSpecs : NSObject <RCTBridgeModule>
 
