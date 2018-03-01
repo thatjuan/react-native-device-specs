@@ -37,52 +37,60 @@ RCT_EXPORT_MODULE()
     return carrierName;
 }
 
-- (NSInteger) totalDiskSpace {
+- (NSNumber *) totalDiskSpaceInBytes {
     NSNumber *fileSystemSizeInBytes = 0;
-    NSInteger fileSystemSizeInGBytes = 0;
     NSError *error = nil;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
     
     if (dictionary) {
         fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
-        fileSystemSizeInGBytes = [@([fileSystemSizeInBytes floatValue] / 1E+9) integerValue];
     } else {
-        NSLog(@"Error Obtaining Disk Memory: Domain = %@, Code = %@", [error domain], [error code]);
+        NSLog(@"Error Obtaining Disk Memory: Domain = %lld, Code = %lld", [[error domain] longLongValue], [[error domain] longLongValue]);
     }
     
-    return fileSystemSizeInGBytes;
+    return fileSystemSizeInBytes;
 }
 
-- (NSNumber *)freeDiskspace{
-    uint64_t totalSpace = 0;
-    uint64_t totalFreeSpace = 0;
-    
+- (NSNumber *)availableDiskSpaceInBytes{
     __autoreleasing NSError *error = nil;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSDictionary *dictionary = [[NSFileManager defaultManager] attributesOfFileSystemForPath:[paths lastObject] error: &error];
     
+    NSNumber *freeFileSystemSizeInBytes;
+    
     if (dictionary) {
-        NSNumber *fileSystemSizeInBytes = [dictionary objectForKey: NSFileSystemSize];
-        NSNumber *freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
-        totalSpace = [fileSystemSizeInBytes unsignedLongLongValue];
-        totalFreeSpace = [freeFileSystemSizeInBytes unsignedLongLongValue];
-        NSLog(@"Memory Capacity of %llu MiB with %llu MiB Free memory available.", ((totalSpace/1024ll)/1024ll), ((totalFreeSpace/1024ll)/1024ll));
+         freeFileSystemSizeInBytes = [dictionary objectForKey:NSFileSystemFreeSize];
     }
     else {
-        NSLog(@"Error Obtaining System Memory Info: Domain = %@, Code = %d", [error domain], [error code]);
+        NSLog(@"Error Obtaining System Memory Info: Domain = %lld, Code = %lld", [[error domain] longLongValue], [[error domain] longLongValue]);
+        return [[NSNumber alloc] initWithInt:0];
     }
     
-    return @(totalFreeSpace);
+    return freeFileSystemSizeInBytes;
+}
+
+- (NSNumber *)usedDiskSpaceInBytes{
+    
+    NSNumber * totalBytes = [self totalDiskSpaceInBytes];
+    NSNumber * availableBytes = [self availableDiskSpaceInBytes];
+    
+    if( [totalBytes compare:availableBytes] == NSOrderedAscending ){
+        return [[NSDecimalNumber alloc] initWithInt:0];
+    }
+    
+    return [[NSNumber alloc] initWithLong: [totalBytes longValue] - [availableBytes longValue]];
+    
 }
 
 - (NSDictionary *)constantsToExport
 {
     return @{
-             @"platform": [self platform],
-             @"carrier": [self carrier],
-             @"diskSpace": [NSNumber numberWithInt:[self totalDiskSpace]],
-             @"diskFreeSpace": [self freeDiskspace],
+         @"platform": [self platform],
+         @"carrier": [self carrier],
+         @"diskTotalBytes": [self totalDiskSpaceInBytes],
+         @"diskAvailableBytes": [self availableDiskSpaceInBytes],
+         @"diskUsedBytes": [self usedDiskSpaceInBytes]
     };
 }
 
